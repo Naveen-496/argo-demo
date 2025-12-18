@@ -15,5 +15,6 @@ spec:
       containers:
         - name: demo-argocd
           image: demo-argocd:v1.0.0
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
