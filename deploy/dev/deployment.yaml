@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-argocd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-argocd
+  template:
+    metadata:
+      labels:
+        app: demo-argocd
+    spec:
+      containers:
+        - name: demo-argocd
+          image: demo-argocd:v1.0.0
+          ports:
+            - containerPort: 3000
