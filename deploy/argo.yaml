@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://github.com/yourusername/demo-argocd.git"
+    repoURL: "https://github.com/Naveen-496/argo-demo.git"
     targetRevision: HEAD
     path: "deploy/dev"
   destination:
